@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --dark: #000000;
+  --white: #ffffff;
   --background-start-rgb: 214, 219, 220;
-  --white: 255, 255, 255;
+  --spacing-lg: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --dark: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: var(--white)
+  color: rgb(var(--white));
+  background: var(--dark);
+  background-image: url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/3841/ea6bfdeb8147a4a83510ae012e8878dfd35db766.jpg);
 }

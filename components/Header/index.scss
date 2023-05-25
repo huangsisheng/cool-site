@@ -1,0 +1,27 @@
+.logo{
+  transform: rotate3d(1, 1, 1, 30deg);
+}
+p {
+  display: inline;
+  font-family: 'Lobster';
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+      color: #fff;
+  }
+}
+
+.logo-content {
+  filter: brightness(110%);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #E91E63, 0 0 35px #E91E63, 0 0 40px #E91E63, 0 0 50px #E91E63, 0 0 75px #E91E63;
+  animation: logo 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes logo {
+to {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #E91E63, 0 0 70px #E91E63, 0 0 80px #E91E63, 0 0 100px #E91E63, 0 0 150px #E91E63;
+}
+}
