@@ -1,26 +1,22 @@
-
 import Link from "next/link";
 
-import github from "/public/svg/github.svg";
-import "./index.css";
 import "./index.scss";
 
 const Links = [
   { name: '首页', key: "home", href: "" },
-  { name: '视觉', key: "view", href: "/view" },
+  { name: '案例', key: "view", href: "/view" },
   { name: '中文', key: "zh-cn", href: "" },
 ]
 
 export default function Header() {
-  return (<header className="nav-wrap flex justify-between items-center ">
+  return (<header className="header-wrap flex justify-between items-center ">
     <div className="logo">
       <p className="logo-content">Cool</p>
     </div>
 
     <div>
-
       {
-        Links.map((item) => <Link href={item.href} className="nav-wrap-link mr-20 cursor-pointer" key={item.key}>{item.name}</Link>)
+        Links.map((item) => <Link href={item.href} className="header-wrap-link mr-20 cursor-pointer" key={item.key}>{item.name}</Link>)
       }
     </div>
     <div>
